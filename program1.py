@@ -11,9 +11,24 @@ def hi_to_low(fig1, fig2, fig3, fig4):
         elif fig3 >= fig2 and fig3 >= fig4:
             if fig2 >= fig4:
                 num_order= {fig1, fig3, fig2, fig4}
-                print(f"num_order")
+                print(f"{num_order}")
             elif fig4 >= fig2:
-                num_order= {}
+                num_order= {fig1, fig3, fig4, fig2}
+        elif fig4 >= fig2 and fig4 >= fig3:
+            if fig3 >= fig2:
+                num_order= {fig1, fig4, fig3, fig2}
+                print(f"{num_order}")
+            elif fig2 >= fig3:
+                num_order= {fig1, fig4, fig2, fig3}
+                print(f"{num_order}")
+    elif fig2 >= fig1 and fig2 >= fig3 and fig2 >= fig4:
+        if fig1 >= fig3 and fig1>= fig4:
+            if fig3 >= fig4:
+                num_order= {fig2, fig1, fig3, fig4}
+                print(f"{num_order}")
+            elif fig4 >= fig3:
+                num_order= {fig2, fig1, fig4, fig3}
+                print(f"{num_order}")
 
 #Create a program that ask 4 numbers. 
 num1= float(input("Enter first number here: "))
