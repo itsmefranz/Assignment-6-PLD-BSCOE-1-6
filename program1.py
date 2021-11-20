@@ -1,5 +1,6 @@
 #Assignment 6: Program 1
 def hi_to_low(fig1, fig2, fig3, fig4):
+##conditions assuming that the first number is the highest    
     if fig1 >= fig2 and fig1 >= fig3 and fig1 >= fig4:
         if fig2 >= fig3 and fig2 >= fig4:
             if fig3 >= fig4:
@@ -14,6 +15,7 @@ def hi_to_low(fig1, fig2, fig3, fig4):
                 print(f"{num_order}")
             elif fig4 >= fig2:
                 num_order= {fig1, fig3, fig4, fig2}
+                print(f"{num_order}")
         elif fig4 >= fig2 and fig4 >= fig3:
             if fig3 >= fig2:
                 num_order= {fig1, fig4, fig3, fig2}
@@ -21,6 +23,8 @@ def hi_to_low(fig1, fig2, fig3, fig4):
             elif fig2 >= fig3:
                 num_order= {fig1, fig4, fig2, fig3}
                 print(f"{num_order}")
+
+#conditions assuming that the second number is the highest
     elif fig2 >= fig1 and fig2 >= fig3 and fig2 >= fig4:
         if fig1 >= fig3 and fig1>= fig4:
             if fig3 >= fig4:
@@ -29,6 +33,15 @@ def hi_to_low(fig1, fig2, fig3, fig4):
             elif fig4 >= fig3:
                 num_order= {fig2, fig1, fig4, fig3}
                 print(f"{num_order}")
+        elif fig3 >= fig1 and fig3 >= fig4:
+            if fig1 >= fig4:
+                num_order= {fig2, fig3, fig1, fig4}
+                print(f"{num_order}")
+            elif fig4 >= fig1:
+                num_order= {fig2, fig3, fig4, fig1}
+                print(f"{num_order}")
+
+
 
 #Create a program that ask 4 numbers. 
 num1= float(input("Enter first number here: "))
