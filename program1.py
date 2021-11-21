@@ -1,4 +1,5 @@
 #Assignment 6: Program 1
+#Create a program that ask 4 numbers. 
 def inputFour():
     while True:
         try:
@@ -62,7 +63,7 @@ def hi_to_low(fig1, fig2, fig3, fig4):
                 print(f"{num_order}")
 
 #conditions assuming that the third number is the highest
-    elif fig3 >= fig1 and fig3 >= fig2 and fig2 >= fig4:
+    elif fig3 >= fig1 and fig3 >= fig2 and fig3 >= fig4:
         if fig1 >= fig2 and fig1 >= fig4:
             if fig2 >= fig4:
                 num_order= [fig3, fig1, fig2, fig4]
@@ -109,9 +110,6 @@ def hi_to_low(fig1, fig2, fig3, fig4):
                 num_order= [fig4, fig3, fig1, fig2]
                 print(f"{num_order}")
 
-#Create a program that ask 4 numbers. 
-
-    
 _num1, _num2, _num3, _num4= inputFour()
 order_num= hi_to_low(_num1, _num2,_num3,_num4)
 
