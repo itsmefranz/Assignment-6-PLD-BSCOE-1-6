@@ -25,6 +25,8 @@ def add():
         else:
             print("Ooops! Incorrect. The right answer is " + str(num1+num2) + ".\n") 
             student_score -= 2
+        if student_score < 0:
+            student_score = 0
 
         print("Student has a score of " + str(student_score) + ".")
 
